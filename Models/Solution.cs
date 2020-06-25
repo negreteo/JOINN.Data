@@ -109,7 +109,7 @@ namespace JOINN.Data
       public bool AttendedAllRegions { get; set; }
 
       [MaxLength (100)]
-      public string? SimilarApp { get; set; }
+      public string SimilarApp { get; set; }
 
       [MaxLength (50)]
       public string CreatedBy { get; set; }
