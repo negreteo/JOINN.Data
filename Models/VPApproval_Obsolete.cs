@@ -118,7 +118,6 @@ namespace JOINN.Data.Models
 
       public bool IsApprovalExceptions { get; set; }
       public string UpdatedBy { get; set; }
-      public DateTime LastUpdate { get; set; }
-
+      public DateTime? LastUpdate { get; set; }
    }
 }

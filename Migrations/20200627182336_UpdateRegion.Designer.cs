@@ -4,14 +4,16 @@ using JOINN.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JOINN.Data.Migrations
 {
     [DbContext(typeof(JOINNDbContext))]
-    partial class JOINNDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200627182336_UpdateRegion")]
+    partial class UpdateRegion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,6 +32,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -57,6 +60,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -84,6 +88,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -111,6 +116,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -138,6 +144,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -165,6 +172,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -192,6 +200,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Level")
@@ -226,6 +235,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Level")
@@ -262,6 +272,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Level")
@@ -295,6 +306,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -322,6 +334,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -349,6 +362,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -376,6 +390,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -403,6 +418,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -430,6 +446,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -489,6 +506,7 @@ namespace JOINN.Data.Migrations
                         .HasMaxLength(300);
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("ReviewedDate")
@@ -533,6 +551,7 @@ namespace JOINN.Data.Migrations
                         .HasMaxLength(50);
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UpdatedBy")
@@ -555,6 +574,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -603,6 +623,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("Solution_ID")
@@ -630,6 +651,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -657,6 +679,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -684,6 +707,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -711,6 +735,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("Solution_ID")
@@ -758,6 +783,7 @@ namespace JOINN.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -789,6 +815,7 @@ namespace JOINN.Data.Migrations
                         .HasMaxLength(50);
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UpdatedBy")
@@ -882,6 +909,7 @@ namespace JOINN.Data.Migrations
                         .HasMaxLength(20);
 
                     b.Property<DateTime?>("LastUpdate")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("LocationID")

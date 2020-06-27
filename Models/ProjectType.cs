@@ -19,7 +19,6 @@ namespace JOINN.Data.Models
       [MaxLength (50)]
       public string UpdatedBy { get; set; }
 
-      [DatabaseGenerated (DatabaseGeneratedOption.Computed)]
-      public DateTime? LastUpdate { get; set; } = DateTime.Now;
+      public DateTime? LastUpdate { get; set; }
    }
 }
