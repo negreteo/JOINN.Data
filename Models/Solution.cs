@@ -1,9 +1,8 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using JOINN.Data.Models;
 
-namespace JOINN.Data
+namespace JOINN.Data.Models
 {
    [Table ("Solutions")]
    public class Solution

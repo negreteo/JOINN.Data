@@ -14,6 +14,7 @@ namespace JOINN.Data
       public virtual DbSet<ApprovalDecision> ApprovalDecisions { get; set; }
       public virtual DbSet<ApprovalStatus> ApprovalStatus { get; set; }
       public virtual DbSet<BenefitType> BenefitTypes { get; set; }
+      public virtual DbSet<BenefitUnit> BenefitUnits { get; set; }
       public virtual DbSet<CostCategory> CostCategories { get; set; }
       public virtual DbSet<FinalDecision> FinalDecisions { get; set; }
       public virtual DbSet<IBPML1> IBPML1 { get; set; }
