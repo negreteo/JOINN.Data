@@ -10,7 +10,7 @@ namespace JOINN.Data.Models
       [Key]
       public int ID { get; set; }
 
-      [ForeignKey ("ProjectType_ID")]
+      [ForeignKey ("ProjectTypeID")]
       public ProjectType ProjectType { get; set; }
 
       [ForeignKey ("IBPML1_ID")]
@@ -22,7 +22,7 @@ namespace JOINN.Data.Models
       [ForeignKey ("IBPML3_ID")]
       public IBPML3 IBPML3 { get; set; }
 
-      public int InCMDB { get; set; }
+      public bool InCMDB { get; set; }
 
       [MaxLength (100)]
       public string Title { get; set; }
