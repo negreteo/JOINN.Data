@@ -39,7 +39,8 @@ namespace JOINN.Data.Models
       [ForeignKey ("ProjectStatusID")]
       public ProjectStatus ProjectStatus { get; set; }
 
-      public int ITGuideLineID { get; set; }
+      [ForeignKey ("ITGuidelineID")]
+      public ITGuideline ITGuideLine { get; set; }
 
       [ForeignKey ("ProjectFunctionID")]
       public ProjectFunction ProjectFunction { get; set; }

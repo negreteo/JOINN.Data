@@ -4,14 +4,16 @@ using JOINN.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JOINN.Data.Migrations
 {
     [DbContext(typeof(JOINNDbContext))]
-    partial class JOINNDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200713201241_UpdateSolutionModelITGuideline")]
+    partial class UpdateSolutionModelITGuideline
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
